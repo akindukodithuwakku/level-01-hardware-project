@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- this form use style.css file as stylesheet logindb as database connection -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/static/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="static/static/css/style.css">
+</head>
+
+<body>
+    <section class="registration-form">
+        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+            <h2>Sign Up</h2>
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="passwordconfirm">Repeat Your Password</label>
+                <input type="password" id="passwordconfirm" name="passwordconfirm" required>
+            </div>
+            <button type="submit" class="btn-register">Register</button>
+            <p class="login-link">Already have an account? <a href="login.php">Log In</a></p>
+        </form>
+    </section>
+</body>
+
+</html>

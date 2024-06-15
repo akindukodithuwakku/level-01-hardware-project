@@ -1,0 +1,148 @@
+/* Center images within cards */
+.card-img-container {
+  display: flex;
+  justify-content: center;
+}
+
+.card-img-container img {
+  max-width: 60%;
+  max-height: 60%;
+  padding: 5px;
+  transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+.card-img-container img:hover {
+  transform: scale(1.1); /* Slightly enlarge images on hover */
+}
+
+/* navbar */
+
+/* General navbar adjustments */
+.navbar {
+  padding: 0.5rem 1rem; /* Reduced padding for a sleeker look */
+}
+
+/* Navbar brand/logo adjustments for better centering */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* Space between logo and brand name */
+}
+
+/* Logout button styling */
+.logout_button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* Space between logout icon and text */
+  cursor: pointer; /* Change cursor to pointer to indicate clickable area */
+}
+
+/* Adjust navbar link spacing and style */
+.navbar-nav .nav-link {
+  padding: 0.5rem 1rem; /* Adjusted padding for navbar links */
+  margin: 0 0.25rem; /* Adds a slight margin between navbar items */
+}
+
+/* Enhance navbar toggler visibility */
+.navbar-toggler {
+  border-color: rgba(
+    0,
+    0,
+    0,
+    0.1
+  ); /* Slightly darken the toggler icon border */
+  outline: none; /* Remove outline to clean up focus state */
+}
+
+/* Custom styling for the collapsed navbar menu */
+#navbarSupportedContent {
+  justify-content: center; /* Center navbar items when collapsed */
+}
+
+/* Enhancements for small screens */
+@media (max-width: 576px) {
+  .navbar {
+    padding: 0.25rem 0.5rem; /* Further reduce padding on smaller screens */
+  }
+  .navbar-brand,
+  .logout_button {
+    flex-direction: row; /* Ensure logo and logout button align nicely on smaller screens */
+  }
+}
+
+/* Global styles */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f8f9fa;
+}
+
+.container {
+  margin-top: 20px; /* Increase top margin for better spacing */
+}
+
+/* Form styles */
+.center {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 600px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+textarea,
+select {
+  width: 100%;
+  padding: 12px; /* Increased padding for better readability */
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  transition: all 0.3s ease; /* Smooth transition for input fields */
+}
+
+input[type="text"]:focus,
+textarea:focus,
+select:focus {
+  border-color: #007bff; /* Highlight focus with a different border color */
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2); /* Soft glow effect on focus */
+}
+
+/* Navigation Link Improvements */
+.navbar-link {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: #007bff; /* Change color on hover for better feedback */
+}
+
+/* Button Enhancements */
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #0056b3; /* Darken button on hover/focus for depth effect */
+  border-color: #0056b3;
+}
+
+/* Footer Enhancements */
+.footer {
+  padding: 20px 0; /* Increase padding for better spacing */
+  background-color: #f9f9f9; /* Slightly different background for contrast */
+  border-top: 1px solid #eaeaea; /* Add a subtle border for definition */
+}
